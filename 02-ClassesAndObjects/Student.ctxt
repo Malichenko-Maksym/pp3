@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Student
+comment1.params=
+comment1.target=void\ SayHello()
+comment2.params=
+comment2.target=void\ DisplayName()
+comment3.params=
+comment3.target=void\ DisplayAge()
+comment4.params=
+comment4.target=void\ DisplayInfo()
+comment5.params=
+comment5.target=void\ ChangeIdCardStatus()
+comment6.params=
+comment6.target=void\ DisplayNameAndCard()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8
