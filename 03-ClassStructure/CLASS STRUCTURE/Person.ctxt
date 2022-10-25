@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Person
+comment1.params=personName
+comment1.target=Person(java.lang.String)
+comment2.params=personName\ weig\ heig
+comment2.target=Person(java.lang.String,\ double,\ double)
+comment3.params=weig\ heig
+comment3.target=void\ setWeightAndHeight(double,\ double)
+comment4.params=
+comment4.target=void\ calculateBMI()
+numComments=5
