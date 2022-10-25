@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SurfaceArea
+comment1.params=radius
+comment1.target=double\ Circle\u0000Area(double)
+comment2.params=side1\ side2
+comment2.target=double\ Rectangle\u0000\u0000Area(double,\ double)
+comment3.params=heigth\ sideToHeigth
+comment3.target=double\ Triangle\u0000\u0000Area(double,\ double)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
