@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-05T09:49:50.768Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.6.0" etag="d9mpv650ygtuPfwf0zns" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-05T10:02:46.227Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.6.0" etag="m8gTYqiaK5YoEako6-lh" type="github">
   <diagram id="7uJK7rrTPAGngBDO9fjv" name="Сторінка-1">
     <mxGraphModel dx="1038" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -17,16 +17,16 @@
           <mxGeometry y="88" width="160" height="52" as="geometry" />
         </mxCell>
         <mxCell id="Pv06mp9jR2B6luGvEEE4-5" value="Folder" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="440" y="150" width="160" height="150" as="geometry" />
+          <mxGeometry x="440" y="150" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Pv06mp9jR2B6luGvEEE4-6" value="-name: String;&#xa;-size: int;&#xa;-numberOfFiles: inf;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Pv06mp9jR2B6luGvEEE4-5">
-          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        <mxCell id="Pv06mp9jR2B6luGvEEE4-6" value="-name: String;&#xa;-size: int;&#xa;-numberOfFiles: int;&#xa;-files: File[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Pv06mp9jR2B6luGvEEE4-5">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
         </mxCell>
         <mxCell id="Pv06mp9jR2B6luGvEEE4-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Pv06mp9jR2B6luGvEEE4-5">
-          <mxGeometry y="80" width="160" height="8" as="geometry" />
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="Pv06mp9jR2B6luGvEEE4-8" value="+addFile(File): null;&#xa;+deleteFile(File): null;&#xa;+displayFiles(null):null;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Pv06mp9jR2B6luGvEEE4-5">
-          <mxGeometry y="88" width="160" height="62" as="geometry" />
+          <mxGeometry y="98" width="160" height="62" as="geometry" />
         </mxCell>
         <mxCell id="Pv06mp9jR2B6luGvEEE4-9" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -35,6 +35,11 @@
             <Array as="points">
               <mxPoint x="360" y="240" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Pv06mp9jR2B6luGvEEE4-10" value="-placed in" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Pv06mp9jR2B6luGvEEE4-9">
+          <mxGeometry x="-0.145" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
