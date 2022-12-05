@@ -3,6 +3,11 @@ import java.util.ArrayList;
 public class Book {
     private int yearOfCreation;
     private String content;
+    private Bookcase placedIn = null;
+
+    public Bookcase getPlacedIn() {
+        return placedIn;
+    }
 
     public int getYearOfCreation() {
         return yearOfCreation;
@@ -21,6 +26,11 @@ public class Book {
     }
 
     ArrayList<String> categories = new ArrayList<String>();
+    ArrayList<Chapter> chapters = new ArrayList<Chapter>();
+
+    public ArrayList<Chapter> getChapters() {
+        return chapters;
+    }
 
     public ArrayList<String> getCategories() {
         return categories;
@@ -44,5 +54,16 @@ public class Book {
     public String readBook() {
         return content;
     }
+
+    public void placeIn(Bookcase bookcase ){
+        placedIn = bookcase;
+    }
+
+    public void addChapter(Chapter chapter){
+        chapters.add(chapter);
+        chapter.belongingTo(this);
+    }
+
+
 
 }
