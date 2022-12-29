@@ -1,11 +1,11 @@
 public class Email extends Message {
     private String messageSubject;
-    private String recipientAddress;
+    private User sendTo;
 
-    public Email(String text, String messageSubject, String recipientAddress) {
+    public Email(String text, String messageSubject, User sendTo) {
         super(text);
         this.messageSubject = messageSubject;
-        this.recipientAddress = recipientAddress;
+        this.sendTo = sendTo;
     }
 
     public String getMessageSubject() {
@@ -16,18 +16,18 @@ public class Email extends Message {
         this.messageSubject = messageSubject;
     }
 
-    public String getRecipientAddress() {
-        return recipientAddress;
+    public User getSendTo() {
+        return sendTo;
     }
 
-    public void setRecipientAddress(String recipientAddress) {
-        this.recipientAddress = recipientAddress;
+    public void setSendTo(User sendTo) {
+        this.sendTo = sendTo;
     }
 
     @Override
     public void send() {
         // TODO Auto-generated method stub
-        System.out.println("To: "+recipientAddress+" About: "+messageSubject);
+        System.out.println("To: "+sendTo.getemailAdress()+" About: "+messageSubject);
         System.out.println("Sending: "+getText());
         System.out.println("There are:"+charNumber()+" symbols");
 

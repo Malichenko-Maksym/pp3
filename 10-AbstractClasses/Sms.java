@@ -1,28 +1,29 @@
 public class Sms extends Message {
-    private String phoneNubmer;
+    private User sendTo;
 
-    public Sms(String text, String phoneNubmer) {
+    public User getSendTo() {
+        return sendTo;
+    }
+
+    public void setSendTo(User sendTo) {
+        this.sendTo = sendTo;
+    }
+
+    public Sms(String text, User sendTo) {
         super(text);
-        this.phoneNubmer = phoneNubmer;
+        this.sendTo = sendTo;
     }
 
-    public Sms(String phoneNubmer) {
-        this.phoneNubmer = phoneNubmer;
+    public Sms(User sendTo) {
+        this.sendTo = sendTo;
     }
 
-    public String getPhoneNubmer() {
-        return phoneNubmer;
-    }
-
-    public void setPhoneNubmer(String phoneNubmer) {
-        this.phoneNubmer = phoneNubmer;
-    }
-
+    
     @Override
     public void send() {
         // TODO Auto-generated method stub
         System.out.println("Sending: "+getText());
-        System.out.println("To : "+phoneNubmer);
+        System.out.println("To : "+sendTo.getPhoneNubmer());
         System.out.println("There are:"+charNumber()+" symbols");
     }
      
